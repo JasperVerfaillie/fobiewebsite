@@ -1,0 +1,90 @@
+$color1: #FF525F ;
+$color2: #00D8FE;
+$color3: #CB4D91;
+$color4: #FFFFFF;
+
+/*  -webkit-clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+ */
+
+.steun_row{
+        background-image: url("../images/steun_deuren_klein.png");
+        background-position: center;
+        background-size: contain;
+        height: 100vh;
+        .steun_card{
+            background-color:$color4;
+            padding: 30px;
+            margin:15px;
+            top:200px;
+            border-radius: 2px;
+            
+        }
+        @media (min-width:$breekpunt1){
+            background-image: url("../images/steun_deuren.png");
+            .steun_card{
+                margin:200px;
+            }
+        }
+    }
+
+
+.steun_txt{
+    color:$color5;
+        text-align: center;
+}
+/*
+.steun_img {
+     background-image: url(../images/steun_deuren.png);
+     background-size: cover;
+     height:100vh;
+     width:auto;
+}
+*/
+
+
+.fund_card{
+    height: 400px;
+    width: 250px;
+    margin-bottom:200px;
+    .fund_txt{
+    margin:0;
+    background: $color4;
+    color: $color5;
+    }
+    .fund_img{
+        width:auto;
+        height:200px;
+    }
+
+}
+
+.bttn {
+    text-align: center;
+    align-content: center;
+    a{
+            -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+            -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+            -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+            -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+            transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+            display: block;
+            margin: 20px auto;
+            max-width: 180px;
+            text-decoration: none;
+            border-radius: 4px;
+            padding: 20px 30px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 800; 
+            color: $color5;
+        
+    box-shadow: $color5 0 0px 0px 2px inset;
+}}
+
+.bttn:hover {
+    a{
+    color: rgba(255, 255, 255, 0.85);
+    background-color: $color5;
+    box-shadow: $color5 0 0px 0px 40px inset;
+}}

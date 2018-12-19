@@ -1,0 +1,119 @@
+@import "intro";
+@import "main";
+@import "watishet";
+@import "tips";
+@import "steun";
+@import "getuigenissen";
+
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Open+Sans:300,400,700');
+
+
+$color1: #FF525F ;
+$color2: rgb(252, 182, 125);
+$color3: #CB4D91;
+$color4: #F6F6F6 ;
+$color5: #426aa5;
+
+$breekpunt1: 720px;
+
+$fontset1:'Black Han Sans', sans-serif ;
+$fontset2:'Open Sans', sans-serif ;
+
+*{
+    text-decoration: none;
+}
+
+
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5em;
+    font-family: $fontset2;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: $fontset1;
+}
+
+h2{
+    font-family: $fontset2;
+}
+
+.nav-link{
+    color:black;
+}
+.nav-item{
+    padding:10px;
+}
+
+.navbar-wit{
+    background-color: #FFF;
+}
+
+.navbar-brand{
+        font-family: $fontset1;
+        color:$color5;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../images/deurknop.png);
+}
+
+
+footer{
+    width: 100%;
+    background-color:$color4;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    bottom: 0;
+    color: #426aa5;
+    padding:10px;
+    font-size: 0.5em;
+
+}
+
+/*
+li.nav-item{
+    position:relative;
+}
+li.pullRight a:before
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+    color:$color5;
+}
+
+li.pullRight a:hover:before
+{
+    width: 100%;
+    background-color: $color5;
+    color:$color4;
+} */
+.cool-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:$color5;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;}

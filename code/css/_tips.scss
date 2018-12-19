@@ -1,0 +1,46 @@
+
+.tip_row {
+    margin-top:100px;
+}
+
+.tips_img1 {
+        height: 450px;
+        width: auto;
+        background-image: url("../images/deur_octo_dicht_kleur.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        transition: all 0.5s;
+    
+    }
+.tips_img1:hover{
+    background-image: url('../images/deur_octo_open_kleur.png');
+}
+
+.tips_img2 {
+        height: 450px;
+        width: auto;
+        background-image: url("../images/deur_schreeuw_dicht_kleur.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        transition: all 0.5s;
+    }
+.tips_img2:hover{
+    background-image: url('../images/deur_schreeuw_open_kleur.png')
+}
+
+
+.tips_text{
+    margin-top: 35%;
+    color: $color5;
+    h1{
+        font-size: 30px;
+    }}
+
+.tips_nummer{
+    h1{
+        font-size:33vw;
+        color:$color5;
+    }
+}

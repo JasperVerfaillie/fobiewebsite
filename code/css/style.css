@@ -1,0 +1,564 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans|Open+Sans:300,400,700");
+.intro_image {
+  margin-top: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../images/intro_deur_dicht.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.intro_image:hover {
+  background-image: url(../images/intro_deur_open_tekst.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.intro_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 400px;
+  width: 300px;
+  margin: 0;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(../images/main_background_staand.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-column-count: 1;
+          column-count: 1;
+}
+
+.header .txt {
+  margin-top: 25vh;
+}
+
+.header .main_txt {
+  -webkit-column-count: 1;
+          column-count: 1;
+  padding-right: 50px;
+}
+
+@media (min-width: 720px) {
+  .header {
+    background-image: url("../images/main_background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75vh;
+  }
+  .header .main_txt {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
+/*
+    -webkit-clip-path: polygon(5% 0, 100% 0, 93% 100%, 0 99%);
+    clip-path: polygon(5% 0, 100% 0, 93% 100%, 0 99%);
+*/
+.card_row {
+  margin-top: 100px;
+}
+
+@media (min-width: 992px) {
+  .card_row .card_img {
+    height: 250px;
+  }
+}
+
+.card_img {
+  height: 400px;
+  padding: 10px;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.card_img.card_img1 {
+  background-image: url(../images/deur_schreeuw_dicht_kleur.png);
+  background-size: contain;
+  background-position: center center;
+}
+
+.card_img.card_img2 {
+  background-image: url(../images/deur_blauw_dicht_kleur.png);
+  background-position: center center;
+  background-size: contain;
+}
+
+.card_img.card_img3 {
+  background-image: url(../images/deur_octo_dicht_kleur.png);
+  background-position: center center;
+  background-size: contain;
+}
+
+.card_img1:hover {
+  background-image: url("../images/deur_schreeuw_open_kleur.png");
+  background-size: contain;
+}
+
+.card_img2:hover {
+  background-image: url("../images/deur_blauw_open_kleur.png");
+  background-size: contain;
+}
+
+.card_img3:hover {
+  background-image: url("../images/deur_octo_open_kleur.png");
+  background-size: contain;
+}
+
+.card_txt {
+  background-position: right 20px bottom 10px;
+  padding: 25px;
+  bottom: 200px;
+  min-height: 250px;
+}
+
+.card_txt.card_txt1 {
+  background-color: #CB4D91;
+}
+
+.card_txt.card_txt2 {
+  background-color: #426aa5;
+}
+
+.card_txt.card_txt3 {
+  background-color: #FF525F;
+}
+
+.card_txt h1 {
+  font-size: 1.25em;
+  color: #F6F6F6;
+  text-align: center;
+}
+
+.card_txt p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #F6F6F6;
+}
+
+.card_txt .button {
+  background-color: #F6F6F6;
+  border-radius: 8px;
+  padding: 4px;
+  color: black;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.card_txt a {
+  color: #426aa5;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.tip_row {
+  margin-top: 100px;
+}
+
+.tips_img1 {
+  height: 450px;
+  width: auto;
+  background-image: url("../images/deur_octo_dicht_kleur.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.tips_img1:hover {
+  background-image: url("../images/deur_octo_open_kleur.png");
+}
+
+.tips_img2 {
+  height: 450px;
+  width: auto;
+  background-image: url("../images/deur_schreeuw_dicht_kleur.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.tips_img2:hover {
+  background-image: url("../images/deur_schreeuw_open_kleur.png");
+}
+
+.tips_text {
+  margin-top: 35%;
+  color: #426aa5;
+}
+
+.tips_text h1 {
+  font-size: 30px;
+}
+
+.tips_nummer h1 {
+  font-size: 33vw;
+  color: #426aa5;
+}
+
+/*  -webkit-clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+ */
+.steun_row {
+  background-image: url("../images/steun_deuren_klein.png");
+  background-position: center;
+  background-size: contain;
+  height: 100vh;
+}
+
+.steun_row .steun_card {
+  background-color: #FFFFFF;
+  padding: 30px;
+  margin: 15px;
+  top: 200px;
+  border-radius: 2px;
+}
+
+@media (min-width: 720px) {
+  .steun_row {
+    background-image: url("../images/steun_deuren.png");
+  }
+  .steun_row .steun_card {
+    margin: 200px;
+  }
+}
+
+.steun_txt {
+  color: #426aa5;
+  text-align: center;
+}
+
+/*
+.steun_img {
+     background-image: url(../images/steun_deuren.png);
+     background-size: cover;
+     height:100vh;
+     width:auto;
+}
+*/
+.fund_card {
+  height: 400px;
+  width: 250px;
+  margin-bottom: 200px;
+}
+
+.fund_card .fund_txt {
+  margin: 0;
+  background: #FFFFFF;
+  color: #426aa5;
+}
+
+.fund_card .fund_img {
+  width: auto;
+  height: 200px;
+}
+
+.bttn {
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.bttn a {
+  -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  display: block;
+  margin: 20px auto;
+  max-width: 180px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  color: #426aa5;
+  -webkit-box-shadow: #426aa5 0 0px 0px 2px inset;
+          box-shadow: #426aa5 0 0px 0px 2px inset;
+}
+
+.bttn:hover a {
+  color: rgba(255, 255, 255, 0.85);
+  background-color: #426aa5;
+  -webkit-box-shadow: #426aa5 0 0px 0px 40px inset;
+          box-shadow: #426aa5 0 0px 0px 40px inset;
+}
+
+.getuigenis_container img {
+  z-index: 0;
+  display: block;
+  margin: 0;
+  height: 350px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.person_img {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.row_getuigen {
+  padding: 50px;
+}
+
+.row_intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5vh;
+  background-image: url("../images/main_background_hoek.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row_intro h1 {
+  font-size: 2em;
+}
+
+.row_intro p {
+  font-size: 1em;
+}
+
+.row_1 p {
+  color: #426aa5;
+}
+
+.row_1 h1 {
+  color: #426aa5;
+}
+
+.row_2 {
+  background-color: #426aa5;
+}
+
+.row_2 p {
+  color: #FFFFFF;
+}
+
+.row_2 h1 {
+  color: #FFFFFF;
+}
+
+.row_3 p {
+  color: #426aa5;
+}
+
+.row_3 h1 {
+  color: #426aa5;
+}
+
+form {
+  background-color: #426aa5;
+  color: #FFFFFF;
+  padding: 50px;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+form .text-muted {
+  color: #FFFFFF;
+}
+
+form .button a {
+  display: block;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+  color: #426aa5;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+form .button a a:hover {
+  text-decoration: none;
+}
+
+.getuigen_text {
+  margin-top: 5%;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.getuigen_text h1 {
+  font-size: 30px;
+}
+
+.overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+}
+
+.overlay h1 {
+  font-size: 35px;
+}
+
+.overlay:hover {
+  opacity: 0.75;
+  background-color: white;
+  color: #426aa5;
+}
+
+* {
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Black Han Sans", sans-serif;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.navbar-wit {
+  background-color: #FFF;
+}
+
+.navbar-brand {
+  font-family: "Black Han Sans", sans-serif;
+  color: #426aa5;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../images/deurknop.png);
+}
+
+footer {
+  width: 100%;
+  background-color: #F6F6F6;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: fixed;
+  bottom: 0;
+  color: #426aa5;
+  padding: 10px;
+  font-size: 0.5em;
+}
+
+/*
+li.nav-item{
+    position:relative;
+}
+li.pullRight a:before
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+    color:$color5;
+}
+
+li.pullRight a:hover:before
+{
+    width: 100%;
+    background-color: $color5;
+    color:$color4;
+} */
+.cool-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #426aa5;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,124 @@
+.getuigenis_container{ 
+    img{
+        z-index:0;
+        display: block;
+        margin:0;
+        height:350px;
+        width:100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+.person_img{
+    position: relative;
+    object-fit: cover;
+    z-index:0;
+}
+
+.row_getuigen {
+    
+    padding:50px;
+}
+
+.row_intro{
+    display: flex;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    margin-top: 5vh;
+    background-image: url('../images/main_background_hoek.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        font-size: 2em;
+    }
+    p{
+        font-size:1em;
+    }
+}
+
+
+.row_1{
+    p{
+    color:$color5;
+}
+    h1{
+        color:$color5;
+}
+}
+
+.row_2{
+    background-color: $color5;
+    p{
+    color:$color4;
+}
+    h1{
+        color:$color4;
+}
+}
+.row_3{
+    p{
+    color:$color5;
+}
+    h1{
+        color:$color5;
+}
+}
+
+
+form{
+    background-color: $color5;
+    color:$color4;
+    padding:50px;
+    margin:0;
+    padding-bottom:100px;
+    .text-muted{
+        color:$color4;
+    }
+    .button{
+        a{
+        display:block;
+        text-align: center;
+        align-items: center;
+        background-color: $color4;
+        color: $color5;
+        padding: 10px;
+        border-radius: 8px;
+        a:hover{
+            text-decoration: none;
+        }
+    }
+}
+}
+
+  .getuigen_text{
+    margin-top: 5%;
+    color: $color4;
+    padding:20px;
+    h1{
+        font-size: 30px;
+    }
+}
+
+.overlay{
+    display: flex;
+    width:auto;
+    height:100%;
+    z-index:2;
+    opacity: 0;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.5s;
+    position: absolute;
+    h1{
+        font-size:35px;
+    }
+}
+
+.overlay:hover{
+    opacity:0.75;
+    background-color: white;
+    color: $color5;
+}

@@ -1,0 +1,113 @@
+$color1: #FF525F ;
+$color2: #43A7B8;
+$color3: #CB4D91;
+$color4: #F6F6F6 ;
+$color5: #426aa5;
+
+
+/*
+    -webkit-clip-path: polygon(5% 0, 100% 0, 93% 100%, 0 99%);
+    clip-path: polygon(5% 0, 100% 0, 93% 100%, 0 99%);
+*/
+
+
+.card_row {
+    margin-top:100px;
+    @media (min-width: 992px){
+        .card_img{
+            height:250px;}
+}}
+
+
+
+
+.card_img{
+        height:400px;
+        padding:10px;
+        margin-bottom:0;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        transition: all 0.5s;
+    &.card_img1{
+        background-image: url(../images/deur_schreeuw_dicht_kleur.png);
+        background-size: contain;
+        background-position: center center;
+    }
+    &.card_img2{
+        background-image: url(../images/deur_blauw_dicht_kleur.png);
+        background-position: center center;
+        background-size: contain;
+    }
+    &.card_img3{
+        background-image: url(../images/deur_octo_dicht_kleur.png);
+        background-position: center center;
+        background-size: contain;
+    }
+    }
+
+.card_img1:hover{
+        background-image: url('../images/deur_schreeuw_open_kleur.png');
+        background-size: contain;
+    }
+
+    .card_img2:hover{
+        background-image: url('../images/deur_blauw_open_kleur.png');
+        background-size: contain;
+    }
+
+
+.card_img3:hover{
+    background-image: url('../images/deur_octo_open_kleur.png');
+    background-size: contain;
+}
+
+.card_txt {
+    background-position: right 20px bottom 10px;
+    padding:25px;
+    bottom:200px;
+    min-height: 250px;
+
+    &.card_txt1{
+        background-color: $color3;
+    }
+
+    &.card_txt2{
+        background-color: $color5;
+    }
+
+    &.card_txt3{
+        background-color: $color1;
+    }
+
+
+
+    h1{
+        font-size:1.25em;
+        color:$color4;
+        text-align: center;
+    }
+    p {
+        font-size: 1em;
+        font-weight:300;
+        line-height: 1.7em;
+        color:$color4;
+    }
+    .button{
+        background-color: $color4;
+        border-radius: 8px;
+        padding: 4px;
+        color: black;
+        display: block;
+        margin: 20px;
+        text-align: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+    a{
+        color:$color5;
+    }
+}
+
+h1 {
+    font-size: 20px;
+}

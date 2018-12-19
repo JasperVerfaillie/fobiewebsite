@@ -1,0 +1,32 @@
+$breekpunt1: 720px;
+
+
+.header {
+    height:100vh;
+    background-image: url(../images/main_background_staand.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    column-count: 1;
+
+    .txt{
+        margin-top:25vh;
+    }
+
+    .main_txt{
+        column-count: 1;
+        padding-right:50px;
+    }
+
+    @media (min-width:$breekpunt1){
+    background-image: url('../images/main_background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:75vh;
+
+    .main_txt {
+        column-count: 2;
+    }
+}
+}

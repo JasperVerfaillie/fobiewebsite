@@ -1,0 +1,29 @@
+.intro_image{
+    margin-top:25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/intro_deur_dicht.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s;
+    }
+
+.intro_image:hover{
+        background-image: url(../images/intro_deur_open_tekst.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+
+.intro_link {
+   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:400px;
+        width: 300px;
+        margin:0;
+    }
+
