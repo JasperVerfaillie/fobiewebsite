@@ -135,8 +135,10 @@
 .card_txt {
   background-position: right 20px bottom 10px;
   padding: 25px;
-  bottom: 200px;
+  margin-bottom: 200px;
   min-height: 250px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .card_txt.card_txt1 {
@@ -164,22 +166,19 @@
   color: #F6F6F6;
 }
 
-.card_txt .button {
+.card_txt .knop {
   background-color: #F6F6F6;
   border-radius: 8px;
   padding: 4px;
   color: black;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 20px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.card_txt a {
   color: #426aa5;
 }
 
@@ -235,50 +234,54 @@ h1 {
   color: #426aa5;
 }
 
-/*  -webkit-clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
-    clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
- */
-.steun_row {
+.steun_container {
   background-image: url("../images/steun_deuren_klein.png");
   background-position: center;
   background-size: contain;
-  height: 100vh;
-}
-
-.steun_row .steun_card {
-  background-color: #FFFFFF;
-  padding: 30px;
-  margin: 15px;
-  top: 200px;
-  border-radius: 2px;
 }
 
 @media (min-width: 720px) {
-  .steun_row {
+  .steun_container {
     background-image: url("../images/steun_deuren.png");
-  }
-  .steun_row .steun_card {
-    margin: 200px;
   }
 }
 
-.steun_txt {
+.steun_card {
+  background-color: #FFFFFF;
+  padding: 30px;
+  margin: 120px;
+  top: 200px;
+  border-radius: 2px;
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.steun_card .steun_txt {
   color: #426aa5;
   text-align: center;
 }
 
-/*
-.steun_img {
-     background-image: url(../images/steun_deuren.png);
-     background-size: cover;
-     height:100vh;
-     width:auto;
+@media (min-width: 720px) {
+  .steun_card .steun_card {
+    margin: 200px;
+  }
 }
-*/
+
 .fund_card {
   height: 400px;
-  width: 250px;
-  margin-bottom: 200px;
+  width: 100%;
+  margin-bottom: 400px;
+  padding: 20px;
 }
 
 .fund_card .fund_txt {
@@ -287,9 +290,29 @@ h1 {
   color: #426aa5;
 }
 
-.fund_card .fund_img {
-  width: auto;
-  height: 200px;
+.fund_card .fund_txt h2 {
+  font-size: 1.5em;
+}
+
+.fund_card .fund_img img {
+  width: 100%;
+  max-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+@media (min-width: 720px) {
+  .fund_card {
+    margin-bottom: 400px;
+    padding: 10px;
+    background-color: #FFFFFF;
+  }
+}
+
+.bar  {
+  background-color: #FFFFFF;
+  width: 60%;
 }
 
 .bttn {
@@ -508,41 +531,40 @@ h2 {
 
 footer {
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: #FFF;
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  position: fixed;
-  bottom: 0;
+  position: relative;
   color: #426aa5;
   padding: 10px;
   font-size: 0.5em;
 }
 
-/*
-li.nav-item{
-    position:relative;
-}
-li.pullRight a:before
-{
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    content: '';
-    background: #FFF;
-    opacity: 0.3;
-    transition: all 0.3s;
-    color:$color5;
+footer ul.list-inline-item {
+  height: 10px;
+  width: auto;
 }
 
-li.pullRight a:hover:before
-{
-    width: 100%;
-    background-color: $color5;
-    color:$color4;
-} */
+footer .footer-copyright {
+  font-size: 0.5em;
+}
+
+footer .nieuwsbrief {
+  font-size: 1.5em;
+  color: #426aa5;
+  padding: 20px;
+}
+
+footer .nieuwsbrief .knop {
+  background-color: #426aa5;
+  color: #F6F6F6;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px;
+}
+
 .cool-link {
   display: inline-block;
   text-decoration: none;

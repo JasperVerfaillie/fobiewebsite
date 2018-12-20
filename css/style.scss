@@ -66,41 +66,38 @@ h2{
 
 footer{
     width: 100%;
-    background-color:$color4;
+    background-color:#FFF;
     text-align: center;
     align-content: center;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     color: #426aa5;
     padding:10px;
     font-size: 0.5em;
-
+    ul.list-inline-item{
+    
+        height:10px;
+        width: auto;
+    }
+    .footer-copyright{
+        font-size:0.5em;
+    }
+    .nieuwsbrief{
+        font-size: 1.5em;
+        color: $color5;
+        padding:20px;
+    .knop{
+        background-color: $color5;
+        color:$color4;
+        padding:20px;
+        text-align: center;
+        border-radius: 8px;
+        margin:20px;
+    }}
 }
 
-/*
-li.nav-item{
-    position:relative;
-}
-li.pullRight a:before
-{
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    content: '';
-    background: #FFF;
-    opacity: 0.3;
-    transition: all 0.3s;
-    color:$color5;
-}
 
-li.pullRight a:hover:before
-{
-    width: 100%;
-    background-color: $color5;
-    color:$color4;
-} */
+
+
 .cool-link {
     display: inline-block;
     text-decoration: none;
