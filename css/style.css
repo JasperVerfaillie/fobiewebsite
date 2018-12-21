@@ -188,6 +188,7 @@ h1 {
 
 .tip_row {
   margin-top: 100px;
+  padding: 20px;
 }
 
 .tips_img1 {
@@ -232,6 +233,16 @@ h1 {
 .tips_nummer h1 {
   font-size: 33vw;
   color: #426aa5;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .steun_container {
@@ -533,36 +544,72 @@ footer {
   width: 100%;
   background-color: #FFF;
   text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
   color: #426aa5;
   padding: 10px;
   font-size: 0.5em;
 }
 
-footer ul.list-inline-item {
-  height: 10px;
-  width: auto;
+footer .socials i {
+  font-size: 3.5em;
+  margin: 20px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .footer-copyright {
   font-size: 0.5em;
 }
 
-footer .nieuwsbrief {
-  font-size: 1.5em;
-  color: #426aa5;
-  padding: 20px;
+.footer_text {
+  text-align: center;
+  font-size: 1.7em;
+  margin-bottom: 15px;
 }
 
-footer .nieuwsbrief .knop {
-  background-color: #426aa5;
-  color: #F6F6F6;
+.nieuwsbrief {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #426aa5;
+  padding: 20px;
+  margin: 10px;
+}
+
+.nieuwsbrief .knop {
+  font-size: 1em;
+  background-color: #F6F6F6;
+  border: 2px #426aa5;
+  color: #426aa5;
   padding: 20px;
   text-align: center;
   border-radius: 8px;
-  margin: 20px;
+  margin-left: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.nieuwsbrief .knop:hover {
+  background-color: #426aa5;
+  color: #F6F6F6;
 }
 
 .cool-link {
