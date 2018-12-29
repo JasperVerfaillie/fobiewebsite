@@ -143,8 +143,8 @@
             <label for="exampleTextarea">Schrijf hier je getuigenis!</label>
             <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
         </div>
-        <div class="button">
-            <a href="#">Verstuur</a>
+        <div class="knop">
+            <a href="#" onclick="myFunction()">Verstuur</a>
         </div>
     </form>
     <hr>
@@ -164,6 +164,14 @@
         <div class="footer_text">2018 | Arteveldehogeschool | New Media Design II | Jasper Verfaillie</div>
         </div>
     </footer>
+
+    <script>
+            function myFunction() {
+              var txt;
+              if (confirm("Verstuur je getuigenis!")) {
+              document.getElementById("demo").innerHTML = txt;
+            }}
+            </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

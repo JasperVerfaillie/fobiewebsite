@@ -73,11 +73,10 @@ form{
     padding:50px;
     margin:0;
     padding-bottom:100px;
-    .text-muted{
-        color:$color4;
+    .form-text{
+    color: $color4 !important;
     }
-    .button{
-        a{
+    .knop{
         display:block;
         text-align: center;
         align-items: center;
@@ -85,12 +84,16 @@ form{
         color: $color5;
         padding: 10px;
         border-radius: 8px;
-        a:hover{
+        width: 50%;}
+        transition: all 0.3s;
+    .knop:hover{
             text-decoration: none;
+            background-color: $color5;
+            color:$color4;
+            border:10px white;
         }
     }
-}
-}
+
 
   .getuigen_text{
     margin-top: 5%;
@@ -103,8 +106,11 @@ form{
 
 .overlay{
     display: flex;
-    width:auto;
-    height:100%;
+    margin:0;
+    height:350px;
+    width:100%;
+    overflow: hidden;
+    margin-right:15px;
     z-index:2;
     opacity: 0;
     text-align: center;

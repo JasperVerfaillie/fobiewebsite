@@ -2,9 +2,8 @@ $breekpunt1: 720px;
 
 
 .header {
-    height:100vh;
     background-image: url(../images/main_background_staand.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     column-count: 1;
@@ -29,4 +28,99 @@ $breekpunt1: 720px;
         column-count: 2;
     }
 }
+}
+
+.formwrapper {
+    position: absolute;
+    background-color: #426aa5;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transition: all 1s;
+
+    .closebutton {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        fill: white;
+    }
+
+    fieldset {
+        border: 0;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+
+        @media (min-width: $breekpunt1) {
+            display: inline-block;
+            margin-right: 16px;
+        }
+    }
+
+    input[type="text"] {
+        width: 250px;
+        margin-right: 5px;
+
+        @media (min-width: $breekpunt1) {
+            width: 340px;
+        }
+    }
+
+    input[type="submit"] {
+        background-color: #426aa5;
+        color: white;
+        border-radius: 8px;
+        width: 85px;
+        height: 30px;
+    }
+    input[type="submit"]:hover {
+        background-color: #FFF;
+        color:  #426aa5;
+        border-radius: 8px;
+        width: 85px;
+        height: 30px;
+    }
+
+    input::placeholder {
+        color: lightgray;
+    }
+
+    &.verborgen {
+        height: 0;
+        z-index: -1;
+    }
+}
+
+
+.wrapper {
+    position: relative;
+    .nieuwsbrief {
+        position: static;
+        line-height: 64px;
+        padding: 0 20px;
+        border-radius: 0px;
+
+        @media (min-width: $breekpunt1) {
+            position: absolute;
+            display: block;
+            z-index: 2;
+            right: 20px;
+            top: 20px;
+            width: auto;
+            background-color: #426aa5;
+            border-radius: 8px;
+        }
+    }
+
+    @media (min-width: $breekpunt1) {
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+    }
+
 }

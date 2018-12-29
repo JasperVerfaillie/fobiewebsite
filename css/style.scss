@@ -8,115 +8,123 @@
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Open+Sans:300,400,700');
 
 
-$color1: #FF525F ;
+$color1: #FF525F;
 $color2: rgb(252, 182, 125);
 $color3: #CB4D91;
-$color4: #F6F6F6 ;
+$color4: #F6F6F6;
 $color5: #426aa5;
 
 $breekpunt1: 720px;
 
-$fontset1:'Black Han Sans', sans-serif ;
-$fontset2:'Open Sans', sans-serif ;
+$fontset1:'Black Han Sans',
+sans-serif;
+$fontset2:'Open Sans',
+sans-serif;
 
-*{
+* {
     text-decoration: none;
 }
 
 
-p{
+p {
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5em;
     font-family: $fontset2;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-h1{
+h1 {
     font-family: $fontset1;
 }
 
-h2{
+h2 {
     font-family: $fontset2;
 }
 
-.nav-link{
-    color:black;
-}
-.nav-item{
-    padding:10px;
+.nav-link {
+    color: black;
 }
 
-.navbar-wit{
+.nav-item {
+    padding: 10px;
+}
+
+.navbar-wit {
     background-color: #FFF;
 }
 
-.navbar-brand{
-        font-family: $fontset1;
-        color:$color5;
+.navbar-brand {
+    font-family: $fontset1;
+    color: $color5;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     background-image: url(../images/deurknop.png);
 }
 
 
-footer{
+footer {
     width: 100%;
-    background-color:#FFF;
+    background-color: #FFF;
     text-align: center;
     align-items: center;
     justify-content: space-between;
     position: absolute;
     color: $color5;
-    padding:10px;
+    padding: 10px;
     font-size: 0.5em;
-    .socials{
-        i{
-        font-size:3.5em;
-        margin:20px;
-        display: inline-block;
-        align-items: center;
-        justify-content: center;
-    }}
-    .footer-copyright{
-        font-size:0.5em;
+
+    .socials {
+        i {
+            font-size: 3.5em;
+            margin: 20px;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .footer-copyright {
+        font-size: 0.5em;
     }
 }
 
 
-.footer_text{
+.footer_text {
     text-align: center;
     font-size: 1.7em;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
-.nieuwsbrief{
+.nieuwsbrief {
     display: flex;
     align-items: center;
     justify-content: center;
     color: $color5;
-    padding:20px;
-    margin:10px;
-    .knop{
-    font-size: 1em;
-    background-color: $color4;
-    border: 2px $color5;
-    color:$color5;
-    padding:20px;
-    text-align: center;
-    border-radius: 8px;
-    margin-left:20px;
-    transition: all 0.3s;
-    text-decoration: none;
-}
-.knop:hover{
-    background-color: $color5;
-    color:$color4;
-}
+    padding: 20px;
+    margin: 10px;
+
+    .knop {
+        font-size: 1em;
+        background-color: $color4;
+        border: 2px $color5;
+        color: $color5;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        margin-left: 20px;
+        transition: all 0.3s;
+        text-decoration: none;
+    }
+
+    .knop:hover {
+        background-color: $color5;
+        color: $color4;
+    }
 }
 
 
@@ -130,9 +138,10 @@ footer{
     display: block;
     width: 0;
     height: 2px;
-    background:$color5;
+    background: $color5;
     transition: width .3s;
 }
 
 .cool-link:hover::after {
-    width: 100%;}
+    width: 100%;
+}

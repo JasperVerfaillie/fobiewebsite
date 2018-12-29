@@ -16,7 +16,7 @@ $color4: #FFFFFF;
 .steun_card {
     background-color: $color4;
     padding: 30px;
-    margin: 120px;
+    margin: 20px;
     top: 200px;
     border-radius: 2px;
     margin-top: 200px;
@@ -39,14 +39,15 @@ $color4: #FFFFFF;
 
 
 .fund_card {
-    height: 400px;
     width: 100%;
-    margin-bottom: 400px;
+    margin-bottom: 100px;
     padding: 20px;
+    background-color: $color4;
     .fund_txt {
         margin: 0;
         background: $color4;
         color: $color5;
+        padding:10px;
         h2{
         font-size: 1.5em;
     }}
@@ -54,23 +55,39 @@ $color4: #FFFFFF;
     .fund_img {
         img{
         width: 100%;
-        max-height: 150px;
+        max-height: 250px;
         object-fit: cover;
         overflow: hidden;
     }}
 
     @media (min-width:$breekpunt1) {
-        margin-bottom: 400px;
+        margin-bottom: 200px;
         padding: 10px;
         background-color: $color4;
     }
 }
 
-.bar {
-    background-color: $color4;
-    width:60%;
+.fund_button{
+    display: flex;
+    background-color: $color5;
+    color:$color4;
+    padding:5px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:15px;
+    cursor:pointer;
+    transition: all 0.3s;
+    width:50%;
+    text-transform: uppercase;
 }
 
+.fund_button:hover{
+    color:$color5;
+    background-color: $color4;
+    border: 15px $color5;
+}
 
 .bttn {
     text-align: center;
@@ -99,4 +116,49 @@ $color4: #FFFFFF;
         background-color: $color5;
         box-shadow: $color5 0 0px 0px 40px inset;
     }
+}
+.progress_footer{
+    background-color: $color4;
+    table{
+        width:100%;
+        th, td {
+            padding:10px;
+            padding-bottom: 0;
+            text-align: left;
+            font-family: 'Open Sans',
+            sans-serif;
+          }
+        th{
+            color:black;
+            font-weight: 700;
+        }
+        td{
+            font-weight: 400;
+        }
+        @media (min-width:$breekpunt1){
+            th, td{
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+.bar_1{
+    width: 60%; 
+    height:inherit;
+    background-color:$color5;
+    z-index: 1;
+}
+.bar_2{
+    width: 80%; 
+    height:inherit;
+    background-color:$color5;
+    z-index: 1;
+}
+.bar_3{
+    width: 75%; 
+    height:inherit;
+    background-color:$color5;
+    z-index: 1;
 }
